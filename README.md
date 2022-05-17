@@ -16,4 +16,4 @@ Este proyecto cuenta con todos los requisitos actuales, para poder brindar un se
 Este proyecto no se trata de código abierto, es decir que solo los desarrolladores responsables
 pueden colaborar en este proyecto. 
 
-## `De latam para el mundo - 2022`
+## De latam para el mundo - 2022
