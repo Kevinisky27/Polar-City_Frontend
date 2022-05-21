@@ -10,26 +10,53 @@
   <link rel="shortcut icon" href="../IMG/Favicon/favicon-registro.ico" type="image/x-icon">
 </head>
 <body>
-  <form class="formulario">
-    <h1>Registrase</h1>
-    <div class="contenedor">
-      <div class="input-contenedor">
-        <i class="fa-solid fa-user icon"></i>
-        <input type="text" placeholder="Nombre Completo">
+  <h2>Polar City App</h2>
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Registrarse</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <div class="input-contenedor">
-        <i class="fa-solid fa-envelope icon"></i>
-        <input type="email" placeholder="Correo Electrónico">
+      <span>Registrar usuario en Polar City App</span>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Registrarme</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Iniciar Sesión</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <div class="input-contenedor">
-        <i class="fa-solid fa-key icon"></i>
-        <input type="password" placeholder="Contraseña">
+      <span>Iniciar sesión en Polar City App</span>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <a href="#">Olvidé mi contraseña</a>
+      <button>Iniciar Sesión</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Bienvenido a Polar City!</h1>
+        <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+        <button class="ghost" id="signIn">Sign In</button>
       </div>
-      <input type="submit" value="Registrase" class="button">
-      <p>Al registrase, automáticamente aceptarás todos nuestros <strong>Términos y Condiciones</strong> del uso de nuestra <Strong>Política de Privacidad</Strong> de nuestra empresa.</p>
-      <p>¿Ya tienes una cuenta? <a href="../index.html" class="link">Inicia Sesión</a></p>
+      <div class="overlay-panel overlay-right">
+        <h1>Hola, bienvenido a Polar City!</h1>
+        <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+        <button class="ghost" id="signUp">Registrarme</button>
+      </div>
     </div>
-  </form>
+  </div>
+</div>
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/8d2e9c64a6.js" crossorigin="anonymous"></script>
