@@ -4,37 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Inicio de sesión de la empresa Polar City.">
-  <title>Loggin - Polar City App</title>
-  <link rel="shortcut icon" href="IMG/Favicon/favicon-loggin.ico" type="image/x-icon">
-  <link rel="stylesheet" href="CSS/loggin.css">
-  <!--Libreria de FontAwesome -->
-  <script src="https://kit.fontawesome.com/8d2e9c64a6.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Registros de usuarios dentro de la empresa Polar City">
+  <title>Registro - Polar City App</title>
+  <link rel="stylesheet" href="CSS/login.css">
+  <link rel="shortcut icon" href="IMG/Favicon/favicon-registro.ico" type="image/x-icon">
 </head>
 <body>
-  <body id="particles-js"></body>
-<div class="animated bounceInDown">
-  <div class="container">
-    <span class="error animated tada" id="msg"></span>
-    <form name="form1" class="box" onsubmit="return checkStuff()">
-      <h4>Iniciar<span>Sesión</span></h4>
-      <h5>Inicie sesión con su acceso.</h5>
-      <input type="text" name="email" placeholder="Email" autocomplete="off">
-      <i class="typcn typcn-eye" id="eye"></i>
-      <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
-      <label>
-        <input type="checkbox">
-        <span></span>
-        <small class="rmb">Mantener sesión</small>
-      </label>
-      <a href="#" class="forgetpass">Olvidé mi contraseña</a>
-      <input type="submit" value="Sign in" class="btn1">
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Registrarse</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>Registrar usuario en Polar City App</span>
+      <input type="text" placeholder="Nombre usuario" />
+      <input type="email" placeholder="Correo electrónico" />
+      <input type="password" placeholder="Contraseña" />
+      <button>Registrarme</button>
     </form>
-    <a href="Source/registro.html" class="dnthave">¿No tienes una cuenta? Regístrate</a>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Iniciar Sesión</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>Iniciar sesión en Polar City App</span>
+      <input type="email" placeholder="Correo electrónico" />
+      <input type="password" placeholder="Contraseña" />
+      <a href="#" class="forget-password">Olvidé mi contraseña</a>
+      <button>Iniciar Sesión</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Bienvenido a Polar City!</h1>
+        <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+        <button class="ghost" id="signIn">Iniciar Sesión</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hola, bienvenido a Polar City!</h1>
+        <p>Ingresa tus datos personales y comienza a gestionar la empresa con nosotros</p>
+        <button class="ghost" id="signUp">Registrarme</button>
+      </div>
+    </div>
   </div>
 </div>
 
-  <!-- Funcionalidad del inicio de sesión -->
-  <script src="JS/loggin.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/8d2e9c64a6.js" crossorigin="anonymous"></script>
+  <!-- Funcionalidad y lógica de la vista de registro -->
+  <script src="JS/login.js"></script>
 </body>
 </html>
