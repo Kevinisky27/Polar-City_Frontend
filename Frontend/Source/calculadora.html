@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora utilizada para los productos dentro de la app de Polar City">
+  <title>Calculadora - Polar City App</title>
+  <link rel="stylesheet" href="../CSS/calculadora.css">
+  <link rel="shortcut icon" href="../IMG/Favicon/favicon-registro.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="cal">
+
+    <div class="res">
+      <input type="text" readonly id="calc" name="calc" value="0" style="display: none" />
+      <input type="text" readonly id="resultado" name="resultado" value="0" />
+    </div>
+
+    <div class="buttons">
+      <div class="num-btn">
+        <div>
+          <input type="button" value="⥪" class="btn-bs" onclick="bs()">
+          <input type="button" value="(" onclick="addOper(value)">
+          <input type="button" value=")" onclick="addOper(value)">
+        </div>
+        <div>
+          <input type="button" value="1" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="2" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="3" id="" name="" onclick="addNum(value)" />
+        </div>
+        <div>
+          <input type="button" value="4" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="5" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="6" id="" name="" onclick="addNum(value)" />
+        </div>
+        <div>
+          <input type="button" value="7" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="8" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="9" id="" name="" onclick="addNum(value)" />
+        </div>
+        <div>
+          <input type="button" value="." id="" name="" onclick="addOper(value)" />
+          <input type="button" value="0" id="" name="" onclick="addNum(value)" />
+          <input type="button" value="c" id="" name="" class="btn-c" onclick="clean()" />
+        </div>
+      </div>
+
+      <div class="side">
+        <input type="button" value="=" onclick="Total()" />
+        <input type="button" value="+" placeholder="0" onclick="addOper(value)" />
+        <input type="button" value="–" onclick="addOper(value)" />
+        <input type="button" value="×" onclick="addOper(value)" />
+        <input type="button" value="÷" onclick="addOper(value)" />
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../JS/calculadora.js"></script>
+</body>
+</html>
