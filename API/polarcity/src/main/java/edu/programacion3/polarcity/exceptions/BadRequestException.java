@@ -1,23 +1,26 @@
 package edu.programacion3.polarcity.exceptions;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-public class PolarCityException extends RuntimeException{
-    public PolarCityException() {
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class BadRequestException extends RuntimeException{
+    public BadRequestException() {
     }
 
-    public PolarCityException(String message) {
+    public BadRequestException(String message) {
         super(message);
     }
 
-    public PolarCityException(String message, Throwable cause) {
+    public BadRequestException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public PolarCityException(Throwable cause) {
+    public BadRequestException(Throwable cause) {
         super(cause);
     }
 
-    public PolarCityException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public BadRequestException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

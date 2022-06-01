@@ -1,4 +1,4 @@
-package edu.programacion3.polarcity.respositories;
+package edu.programacion3.polarcity.repositories;
 
 import edu.programacion3.polarcity.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;

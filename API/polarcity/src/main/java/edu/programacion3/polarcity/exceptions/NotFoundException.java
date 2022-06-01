@@ -4,23 +4,23 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class ResourceNotFoundException extends RuntimeException{
-    public ResourceNotFoundException() {
+public class NotFoundException extends RuntimeException{
+    public NotFoundException() {
     }
 
-    public ResourceNotFoundException(String message) {
+    public NotFoundException(String message) {
         super(message);
     }
 
-    public ResourceNotFoundException(String message, Throwable cause) {
+    public NotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public ResourceNotFoundException(Throwable cause) {
+    public NotFoundException(Throwable cause) {
         super(cause);
     }
 
-    public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public NotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
