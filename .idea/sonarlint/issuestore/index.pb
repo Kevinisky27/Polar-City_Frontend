@@ -39,5 +39,3 @@ ZAPI/polarcity/src/main/java/edu/programacion3/polarcity/controllers/ProductCont
 KAPI/polarcity/src/main/java/edu/programacion3/polarcity/dto/ProductDTO.java,d/3/d3c046f7c33d395ceed061000718d30569cffa39
 }
 MAPI/polarcity/src/main/java/edu/programacion3/polarcity/entities/Product.java,d/1/d1f9d360c3163fd9d7444a87721dfe343865dc11
-‚
-RAPI/polarcity/src/main/java/edu/programacion3/polarcity/config/SecurityConfig.java,e/3/e3498169bd3d20cd14bf3b4e77fe2ba165b85aa2
