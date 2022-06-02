@@ -25,7 +25,7 @@ var navBar = `
           </li>
           <li><a href="javascript:void(0)">Inventario<span class="arrow-down"></span></a>
             <ul class="dropdown">
-              <li><a href="#">Visualizar inventario</a></li>
+              <li><a onclick="inventario()">Visualizar inventario</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)">Contacto<span class="arrow-down"></span></a>
@@ -64,6 +64,9 @@ function integrantes() { // botón de integrantes
   location.href = "../Source/integrantes.html"
 }
 
+function inventario () {
+  location.href = "../Source/inventario.html"
+}
 
 // setTimeout(function () {  //programación por tiempo
 //   location.href = "../index.html";
