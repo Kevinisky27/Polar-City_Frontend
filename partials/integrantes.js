@@ -37,7 +37,7 @@ var integrantes = `
           <div class="profile-pic">
             <img class="profile-pic-image" src="../IMG/Integrantes/Tito.jpeg" />
           </div>
-          <h3 class="profile-name">JOSÉ</h3>
+          <h3 class="profile-name">HUMBERTO</h3>
         </div>
       </div>
       <div class="profile">
