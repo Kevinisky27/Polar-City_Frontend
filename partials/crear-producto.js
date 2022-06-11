@@ -1,25 +1,3 @@
-function crearProducto(){
-
-
-  let product = {}
-  product.id = 2030
-  product.name = "Clanchas"
-  product.price = 200
-
-  let stock = {}
-  stock.product = product
-  stock.quantity = 250
-
-  fetch('https://polarcity.herokuapp.com/api/stocks',{
-      method:'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'Application/json'
-      },
-      body: JSON.stringify(stock)
-    }).then((res) => res.json())
-    .then(data => console.log(data))
-}
 
 var productos = `
 <table class="container">
@@ -46,15 +24,19 @@ var form = `
   <div class="container">
   <form>
     <label for="name">ID: Producto</label>
-    <input type="text" id="name" placeholder="id: 1025" 
+    <input type="text" id="id" placeholder="id: 1025" 
+
     <label for="name">Nombre Producto Producto</label>
-    <input type="text" id="name" placeholder="Lapiceros Big -Medianos color azul">
-    <label for="email">Precio</label>
-    <input type="email" id="email" placeholder="Q 2.50">
-    <label for="email">Cantidad</label>
-    <input type="email" id="email" placeholder="cant: 15">
-    <input type="submit" value="Crear Producto">
+    <input type="text" id="nombre" placeholder="Lapiceros Big -Medianos color azul">
+
+    <label for="precio">Precio</label>
+    <input type="text" id="precio" placeholder="Q 2.50">
+
+    <label for="cantidad">Cantidad</label>
+    <input type="text" id="cantidad" placeholder="cant: 15">
+
+    <input type="button" onclick="crearProducto()" value="Crear Producto" >
   </div>
 `
 var formulario = document.getElementById('table-main')
-formulario.innerHTML = form;
+// formulario.innerHTML = form;
