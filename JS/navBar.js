@@ -12,7 +12,9 @@ function cerrarSesion () { // botón de Cerrar Sesión
   location.href = "../index.html"
 }
 
-
+function crearProducto () {
+  location.href = "../Source/crear-producto.html"
+}
 // setTimeout(function () {  //programación por tiempo
 //   location.href = "../index.html";
 // }, 1000 * 1)
