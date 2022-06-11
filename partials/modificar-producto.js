@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+function modificarProducto(){
+    
+    let product = {}
+    product.id = 200
+    product.name = "Pelota"
+    product.price = 250
+
+    let id = 2030;
+
+    fetch('https://polarcity.herokuapp.com/api/products/'+id,{
+        method:'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'Application/json'
+        },
+        body: JSON.stringify(product)
+    }).then((res) => res.json())
+    .then(data => console.log(data))
+}
+=======
 var template = `
 <fieldset class="field-container">
     <input type="text" placeholder="Producto: 1025" class="field" />
@@ -37,3 +58,4 @@ buscador.innerHTML = template;
     <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
     <input type="submit" value="Submit">
   </form> */}
+>>>>>>> 6ac12888f5cf7d6723dbb3e7fbe013e814bbd87d
