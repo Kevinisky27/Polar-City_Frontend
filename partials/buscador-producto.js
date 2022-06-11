@@ -10,7 +10,7 @@ function buscarProductoPorId(){
 
 var template = `
 <fieldset class="field-container">
-    <input type="text" placeholder="Mercedes Azucena López Pérez" class="field" />
+    <input type="text" placeholder="Producto: 1025" class="field" />
     <div class="icons-container">
       <div class="icon-search"></div>
       <div class="icon-close">
@@ -27,7 +27,6 @@ var table = `
         <th><h1>ID</h1></th>
         <th><h1>Nombre</h1></th>
         <th><h1>Precio</h1></th>
-        <th><h1>Existencia</h1></th>
       </tr>
     </thead>
     <tbody>
@@ -35,7 +34,6 @@ var table = `
         <td>1002</td>
         <td>Lápiz Mongol</td>
         <td>Q 1.75</td>
-        <td>15</td>
       </tr>
     </tbody>
   </table>

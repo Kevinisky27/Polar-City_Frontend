@@ -50,9 +50,12 @@ formLogin.addEventListener('submit', function (e) {
   })
   .then((res) =>  res.json())
   .catch(err => console.log(err))
+
 })
 
-
+function ingresar (){
+  location.href = 'Source/home.html'
+}
 
 
 

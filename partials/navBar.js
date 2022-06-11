@@ -8,14 +8,15 @@ var navBar = `
           <li><a onclick="home()">Inicio</a></li>
           <li><a href="javascript:void(0)">Productos<span class="arrow-down"></span></a>
             <ul class="dropdown">
-              <li><a onclick="crearProducto()">Crear Producto</a></li>
-              <li><a href="#">Buscar producto</a></li>
-              <li><a href="#">Existencia de Productos</a></li>
+              <li><a href="../Source/crear-producto.html">Crear Producto</a></li>
+              <li><a href="../Source/buscar-producto.html">Buscar producto</a></li>
+              <li><a href="../Source/modificar-producto.html">Modificar Productos</a></li>
+              <li><a href="../Source/existencia-productos.html">Existencia de Productos</a></li>
             </ul>
           <li><a href="javascript:void(0)">Ordenes<span class="arrow-down"></span></a>
             <ul class="dropdown">
-              <li><a href="">Crear orden</a></li>
-              <li><a href="">Ordenes autorizada</a></li>
+              <li><a href="../Source/crear-orden.html">Crear orden</a></li>
+              <li><a href="../Source/ordenes-status.html">Ordenes autorizada</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)">Factura<span class="arrow-down"></span></a>
