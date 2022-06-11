@@ -8,14 +8,14 @@ var navBar = `
           <li><a onclick="home()">Inicio</a></li>
           <li><a href="javascript:void(0)">Productos<span class="arrow-down"></span></a>
             <ul class="dropdown">
-              <li><a href="#">Crear producto</a></li>
-              <li><a href="#">Modificar producto</a></li>
-              <li><a href="#">Eliminar producto</a></li>
+              <li><a onclick="crearProducto()">Crear Producto</a></li>
+              <li><a href="#">Buscar producto</a></li>
+              <li><a href="#">Existencia de Productos</a></li>
             </ul>
           <li><a href="javascript:void(0)">Ordenes<span class="arrow-down"></span></a>
             <ul class="dropdown">
               <li><a href="">Crear orden</a></li>
-              <li><a href="">Orden autorizada</a></li>
+              <li><a href="">Ordenes autorizada</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)">Factura<span class="arrow-down"></span></a>
@@ -30,7 +30,7 @@ var navBar = `
           </li>
           <li><a href="javascript:void(0)">Contacto<span class="arrow-down"></span></a>
             <ul class="dropdown">
-              <li><a href="#">Chat bot - WhatsApp</a></li>
+              <li><a href="https://wa.me/50247385398?text=Vengo%20dirigido%20desde%20la%20plataforma%20de%20Polar%20City." target="__blank__">Chat bot - WhatsApp</a></li>
             </ul>
           </li>
           <li><a href="https://calendar.google.com/calendar/" target="__blank__">Calendario</a></li>
@@ -68,6 +68,9 @@ function inventario () {
   location.href = "../Source/inventario.html"
 }
 
+function BuscarProducto () {
+  location.href = "../Source/crear-producto.html"
+}
 // setTimeout(function () {  //programación por tiempo
 //   location.href = "../index.html";
 // }, 1000 * 1)
