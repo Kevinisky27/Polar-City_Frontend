@@ -51,6 +51,8 @@ var form = `
     <input type="text" id="name" placeholder="Lapiceros Big -Medianos color azul">
     <label for="email">Precio</label>
     <input type="email" id="email" placeholder="Q 2.50">
+    <label for="email">Cantidad</label>
+    <input type="email" id="email" placeholder="cant: 15">
     <input type="submit" value="Crear Producto">
   </div>
 `

@@ -9,6 +9,7 @@ var form = `
       <input type="email" id="email" placeholder="cant: 15">
       <input type="submit" value="Generar Orden">
       
+      
   </div>
 `
 var formulario = document.getElementById('table-main')
