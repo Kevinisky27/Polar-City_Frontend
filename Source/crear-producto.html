@@ -12,11 +12,26 @@
   <!-- Cargando la barra de navegación -->
   <div id="header"></div>
   
-  <div id="table-main"></div>
+  <!-- <div id="table-main"></div> -->
   
-
-
+  <div class="container">
+    <form>
+      <label for="name">ID: Producto</label>
+      <input type="text" id="id" placeholder="id: 1025" 
+  
+      <label for="name">Nombre Producto Producto</label>
+      <input type="text" id="nombre" placeholder="Lapiceros Big -Medianos color azul">
+  
+      <label for="precio">Precio</label>
+      <input type="text" id="precio" placeholder="Q 2.50">
+  
+      <label for="cantidad">Cantidad</label>
+      <input type="text" id="cantidad" placeholder="cant: 15">
+  
+      <input type="button" onclick="crearProducto()" value="Crear Producto" >
+    </div>
   <script src="../partials/navBar.js"></script>
   <script src="../partials/crear-producto.js"></script>
+  <script src="../JS/auth/crear-producto.js"></script>
 </body>
 </html>

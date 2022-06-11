@@ -62,9 +62,35 @@ var template = `
     </div>
   </fieldset>
 `
-var buscador = document.getElementById('buscador');
-buscador.innerHTML = template;
+
+// var buscador = document.getElementById('buscador');
+// buscador.innerHTML = template;
 
 
-var main = document.getElementById('table-main');
-main.innerHTML = inventario;
+// var main = document.getElementById('table-main');
+// main.innerHTML = inventario;
+
+
+async function traerInventario(){
+
+	const request = await fetch('https://polarcity.herokuapp.com/api/stocks',{
+		method: 'GET',
+		headers:{
+			'Accept': 'application/json',
+     		'Content-Type': 'application/json'
+		}
+	})
+
+	const inventories = await request.json();
+
+	let inventoryList = '';
+
+	for(let inventory of inventories){
+		let productHtml = "<tr><td>"+inventory.product.id+"</td><td>"+inventory.product.name+"</td><td>Q "+inventory.product.price+"</td><td>"+inventory.quantity+"</td></tr>"
+		inventoryList += productHtml;
+	}
+	document.querySelector('#inventory-container tbody').outerHTML = inventoryList;
+  }
+  
+  traerInventario()
+  
