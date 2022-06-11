@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function crearProducto(){
 
 
@@ -41,20 +40,19 @@ var productos = `
       </tr>
     </tbody>
   </table>
-=======
+`
+
 var form = `
   <div class="container">
-    <form>
-      <label for="name">ID: Producto</label>
-      <input type="text" id="name" placeholder="id: 1025" 
-      <label for="name">Nombre Producto</label>
-      <input type="text" id="name" placeholder="Lapiceros Big - Medianos color azul">
-      <label for="email">Precio</label>
-      <input type="email" id="email" placeholder="Q. 2.50">
-      <input type="submit" value="Enviar Producto">
-      
+  <form>
+    <label for="name">ID: Producto</label>
+    <input type="text" id="name" placeholder="id: 1025" 
+    <label for="name">Nombre Producto Producto</label>
+    <input type="text" id="name" placeholder="Lapiceros Big -Medianos color azul">
+    <label for="email">Precio</label>
+    <input type="email" id="email" placeholder="Q 2.50">
+    <input type="submit" value="Crear Producto">
   </div>
->>>>>>> 6ac12888f5cf7d6723dbb3e7fbe013e814bbd87d
 `
 var formulario = document.getElementById('table-main')
 formulario.innerHTML = form;
