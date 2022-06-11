@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function modificarProducto(){
     
     let product = {}
@@ -18,7 +17,7 @@ function modificarProducto(){
     }).then((res) => res.json())
     .then(data => console.log(data))
 }
-=======
+
 var template = `
 <fieldset class="field-container">
     <input type="text" placeholder="Producto: 1025" class="field" />
@@ -48,14 +47,4 @@ formulario.innerHTML = form;
 var buscador = document.getElementById('buscador');
 buscador.innerHTML = template;
 
-{/* <input type="email" id="email" placeholder="Email Address">
-    <label for="gender">Gender</label>
-    <select id="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
-    <label for="message">Message</label>
-    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
-    <input type="submit" value="Submit">
-  </form> */}
->>>>>>> 6ac12888f5cf7d6723dbb3e7fbe013e814bbd87d
+
