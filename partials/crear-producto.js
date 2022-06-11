@@ -1,3 +1,26 @@
+function crearProducto(){
+
+
+  let product = {}
+  product.id = 2030
+  product.name = "Clanchas"
+  product.price = 200
+
+  let stock = {}
+  stock.product = product
+  stock.quantity = 250
+
+  fetch('https://polarcity.herokuapp.com/api/stocks',{
+      method:'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'Application/json'
+      },
+      body: JSON.stringify(stock)
+    }).then((res) => res.json())
+    .then(data => console.log(data))
+}
+
 var productos = `
 <table class="container">
     <thead>

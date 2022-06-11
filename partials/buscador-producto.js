@@ -1,3 +1,13 @@
+function buscarProductoPorId(){
+    // let id = document.getElementById("id").value;
+
+    let id = 1002;
+
+    fetch('https://polarcity.herokuapp.com/api/products/'+id,{
+    }).then((res) => res.json())
+    .then(data => console.log(data))
+}
+
 var template = `
 <fieldset class="field-container">
     <input type="text" placeholder="Mercedes Azucena López Pérez" class="field" />
